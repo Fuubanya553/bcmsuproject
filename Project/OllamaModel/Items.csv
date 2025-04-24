@@ -1,0 +1,35 @@
+id,name,description,price,category
+1,Jallof Rice,aka "PARTY RICE" Rice and Chicken with some spice and flavour best found in Nigeria.,12.99,Main Dish
+2,Oha Soup,"A richly flavored soup made with tender Oha (Ora) leaves, palm oil, assorted meats, and traditional spices. Served with fufu or pounded yam.",12.5,Main dish
+3,Ukwa,"A nutritious dish made from African breadfruit, cooked with palm oil, pepper, fish or meat, and spices.",9.75,Main dish
+4,Abacha and Ugba,"A cold dish made from shredded cassava, seasoned with palm oil, crayfish, ugba (oil bean), and garnished with fish or kpomo.",8.99,Main dish
+5,Nkwobi,"A spicy cow foot delicacy served in palm oil sauce with spices and ugba, often eaten as a bar snack or evening meal.",11.5,Main dish
+6,Truffle-Infused Angus Beef Burger,"A premium Angus beef patty topped with truffle mayo, caramelized onions, and aged cheddar, served on a brioche bun.",14.99,Main dish
+7,Gourmet Crispy Chicken Royale,"Succulent crispy chicken fillet with garlic aioli, lettuce, and a soft brioche bun, offering a delightful crunch in every bite.",12.5,Main dish
+8,Deluxe Veggie Supreme,"A hearty veggie patty with fresh avocado, grilled mushrooms, and smoked Gouda, layered with spinach and tomato, served on a toasted artisan bun.",11.75,Main dish
+9,Crispy Truffle Chicken Tenders,"Crispy breaded chicken tenders drizzled with a rich truffle sauce, served with a side of rosemary-infused fries.",13,Main dish
+10,Char-Grilled BBQ Bacon Burger,"A char-grilled beef patty with smoky BBQ sauce, crispy bacon, and melted gouda, complemented by fresh lettuce and tomato on a toasted brioche bun.",15.5,Main dish
+11,Yoruba Jollof Rice Medley,"A flavorful mix of well-spiced rice, tomato sauce, and a perfect blend of Nigerian seasonings, often served with grilled meats or fish.",6.99,Side dish
+12,Iyan with Palm Nut Sauce,"A smooth, stretchy pounded yam served with a rich palm nut sauce flavored with local spices and assorted meats.",7.5,Side dish
+13,Spicy Eba Delight,"A hearty serving of eba (cassava flour) accompanied by a thick, spicy vegetable soup enriched with meats and fish.",5.99,Side dish
+14,Fried Plantain Fritters,"Golden-brown crispy fried plantains served with a spicy dipping sauce, perfect as a savory snack or side dish.",4.5,Side dish
+15,Beans and Plantain Porridge,"A comforting porridge made from soft beans, fried plantains, and savory spices, making for a perfect side dish.",6.25,Side dish
+16,Apple Pie,"A warm, flaky crust filled with spiced apples and a hint of cinnamon, served golden brown.",4.99,Side dish
+17,Ice Cream Cake,"A layered frozen dessert combining moist cake and creamy ice cream, available in flavors like vanilla, chocolate, strawberry, and cookies & cream.",6.75,Side dish
+18,Cheesecake Deluxe,"A rich, creamy cheesecake with a graham cracker crust, offered in classic, strawberry swirl, chocolate fudge, and mango passion flavors.",6.25,Side dish
+19,French Fries/Wedges,"Crispy golden fries or potato wedges, seasoned to perfection and served with your choice of dipping sauce.",3.5,Side dish
+20,Sweet Fried Plantain,"Ripe plantains sliced and fried to golden perfection, sweet and slightly crispy on the outside.",4.25,Side dish
+21,Breadsticks,"Soft and buttery breadsticks brushed with garlic and herbs, perfect as a warm, savory side.",3.75,Side dish
+22,Signature Ogbono Soup,"A rich, hearty soup made with ground ogbono seeds, tender meats, and fresh vegetables, offering a flavorful and thick texture.",10.99,Soups
+23,Nigerian Efo Riro Deluxe,"A vibrant spinach-based soup, simmered with assorted meats, dried fish, and spices for a rich, savory experience.",12.5,Soups
+24,Ofe Akwu Royal,"A delicious palm fruit-based soup made with tender meats, fish, and vegetables, typically served with fufu or pounded yam.",11.75,Soups
+25,Iya’s Bitterleaf Soup,"A savory soup made from bitterleaf, cooked with assorted meats and spices, creating a rich and flavorful taste.",13.25,Soups
+26,Pepper Soup Supreme,"A spicy and aromatic broth made from a variety of meats or fish, infused with native spices and herbs, offering a warm, comforting dish.",9.99,Soups
+27,Peppered Gizzard Skewers,"Tender gizzard chunks marinated and stir-fried in hot pepper sauce, served on skewers for easy snacking.",5.75,Appetizers
+28,Mini Puff-Puffs,"Golden, deep-fried dough balls with a soft, fluffy center — slightly sweet and perfect for sharing.",3.5,Appetizers
+29,Spicy Suya Bites,"Thinly sliced beef grilled with Yaji spice blend, served in small, fiery bite-sized pieces.",6.25,Appetizers
+30,Kuli Kuli Crunchers,"Crispy groundnut (peanut) snacks seasoned with West African spices, ideal for munching.",2.99,Appetizers
+31,Akara Minis,"Small, crispy bean cakes made from blended black-eyed peas, onions, and peppers — deep-fried to golden perfection.",4.5,Appetizers
+32,Moi Moi Cups,Savory steamed bean pudding served in small cup portions with bits of egg and fish for a rich taste.,5.25,Appetizers
+33,Yam Balls,"Mashed yam mixed with spices and vegetables, rolled and fried into crispy golden balls.",4.75,Appetizers
+35,Chin Chin,"Crunchy, sweet fried dough bites made from flour, milk, and sugar — a classic West African snack perfect for any time of day.",3.25,Appetizers

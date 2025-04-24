@@ -1,0 +1,44 @@
+id,name,description,price,category
+1,Pepsi,"Pepsi is a popular carbonated soft drink by PepsiCo, known for its sweet, citrusy flavor.",3.00,Soda
+2,Coca-Cola,A classic carbonated soft drink with a distinctive cola flavor.,2.49,Soda
+3,Fanta,"A fruit-flavored carbonated soft drink, with orange being the most popular variety.",2.50,Soda
+4,Sprite,"A caffeine-free, lemon-lime flavored soft drink known for its crisp and refreshing taste.",3.50,Soda
+5,Ginger Ale,"A carbonated soft drink flavored with ginger, often used as a mixer or enjoyed on its own.",3.00,Soda
+6,Ginger Beer,"A stronger, spicier non-alcoholic beverage made from fermented ginger.",1.50,Soda
+7,Goya Malt,"A non-alcoholic malt beverage with a sweet, molasses-like flavor.",1.50,Soda
+8,Mountain Dew,"A citrus-flavored, caffeinated soft drink known for its bold taste.",2.77,Soda
+9,Dr. Pepper,"A unique blend of 23 flavors, offering a distinctive taste.",2.97,Soda
+10,Root Beer,"A sweet, carbonated beverage with a rich, creamy flavor, often associated with brands like A&W.",1.29,Soda
+11,7Up,"A lemon-lime flavored, caffeine-free soft drink.",2.36,Soda
+12,Sierra Mist,A lemon-lime flavored soft drink that was introduced by PepsiCo in 1999.,2.00,Soda
+13,Uptown,A refreshing cocktail with a mix of tropical and citrus flavors.,7.50,Alcohol
+14,Jungle Juice,A fruity alcoholic punch with a blend of spirits and fruit juices.,12.00,Alcohol
+15,Margarita,A classic tequila-based cocktail with lime juice and triple sec.,9.75,Alcohol
+16,Mojito,A minty and refreshing rum-based cocktail with lime and soda.,8.25,Alcohol
+17,Old Fashion,"A whiskey-based cocktail with bitters, sugar, and orange zest.",14.50,Alcohol
+18,Cosmopolitan,"A vodka-based cocktail with cranberry juice, triple sec, and lime.",10.25,Alcohol
+19,Pina Colada,"A tropical cocktail with rum, coconut cream, and pineapple juice.",11.00,Alcohol
+20,Gin and Tonic,"A simple and crisp cocktail with gin, tonic water, and lime.",7.75,Alcohol
+21,Bloody Mary,"A savory vodka cocktail with tomato juice, spices, and lemon.",13.00,Alcohol
+22,Heineken,A popular Dutch pale lager beer with a smooth and crisp taste.,8.50,Alcohol
+23,Hennessy,"A premium cognac with deep, rich, and complex flavors.",15.00,Alcohol
+24,Tequila Sunrise,A tequila-based cocktail with orange juice and grenadine.,9,Alcohol
+25,Ice Tea,"A chilled, refreshing tea served over ice.",5.50,Iced Drinks
+26,Ice Coffee,A cold brew coffee served over ice for a refreshing pick-me-up.,6.75,Iced Drinks
+27,Ice Latte,"A coffee-based drink with milk and ice, offering a creamy texture.",7.25,Iced Drinks
+28,Frozen Coffee,"A blended iced coffee drink for a cool, creamy experience.",7,Iced Drinks
+29,Frozen Lemonade Slushie,"A frozen drink made with lemonade and ice for a tangy, refreshing treat.",5.95,Iced Drinks
+30,Frozen Strawberry Slushie,"A frozen drink made with strawberries and ice, perfect for a sweet and tart experience.",6.50,Iced Drinks
+31,Frozen Mango Slushie,"A tropical frozen drink made with mango and ice for a smooth, fruity experience.",6.25,Iced Drinks
+32,Apple Juice,A sweet and refreshing juice made from apples.,2.50,Juice
+33,Cranberry Juice,A tangy and refreshing juice made from cranberries.,3,Juice
+34,Lemonade,A sweet and sour juice made from fresh lemons.,1.75,Juice
+35,Orange Juice,"A classic, sweet juice made from fresh oranges.",3.5,Juice
+36,Pineapple Juice,"A tropical, sweet juice made from fresh pineapples.",2.25,Juice
+37,Hot Coffee,"A warm, rich coffee drink to start your day.",2.50,Morning Beverage
+38,Hot Lemon Tea,A soothing tea made with fresh lemon and hot water.,1.75,Morning Beverage
+39,Hot Milk Tea,A comforting tea made with a blend of tea leaves and milk.,3,Morning Beverage
+40,Hot Water,"Simple, warm water for hydration and comfort.",1.25,Morning Beverage
+41,Green Tea,"A light, refreshing tea known for its health benefits.",2.75,Morning Beverage
+42,Honey Tea,A warm tea sweetened with honey for a soothing experience.,3.25,Morning Beverage
+43,Hot Ginger Tea,"A warm, spicy tea made with fresh ginger for a refreshing kick.",4,Morning Beverage
