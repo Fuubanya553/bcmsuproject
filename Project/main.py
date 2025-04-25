@@ -4,6 +4,10 @@ import os
 import re
 from flask import Flask, render_template, request, jsonify, url_for
 from flask_cors import CORS
+import boto3
+
+s3 = boto3.client('s3')
+s3.upload_file('bcmsuproject')
 
 app = Flask(__name__, template_folder='template', static_folder='static')
 CORS(app)
