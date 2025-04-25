@@ -5,9 +5,6 @@ import re
 from flask import Flask, render_template, request, jsonify, url_for
 from flask_cors import CORS
 
-
-
-
 app = Flask(__name__, template_folder='template', static_folder='static')
 CORS(app)
 
@@ -78,7 +75,6 @@ When responding:
 NEVER make up items, prices, or descriptions.
 """
 
-
 @app.route("/ask", methods=['POST'])
 def ask():
     try:
@@ -98,14 +94,19 @@ Now answer this question:
 {question}
 """
 
-        response = ollama.chat(model='llama3.2', messages=[{'role': 'user', 'content': full_prompt}])
-
-        if not response or 'message' not in response or 'content' not in response['message']:
-            return jsonify({"response": "Model returned an unexpected response."}), 500
+        try:
+            # Attempting to connect to Ollama and get a response
+            response = ollama.chat(model='llama3.2', messages=[{'role': 'user', 'content': full_prompt}])
+            if not response or 'message' not in response or 'content' not in response['message']:
+                return jsonify({"response": "Model returned an unexpected response."}), 500
+        except Exception as e:
+            # If Ollama connection fails, log the error and return a response
+            return jsonify({"response": f"Failed to connect to Ollama: {str(e)}"}), 500
 
         return jsonify({"response": response['message']['content']})
 
     except Exception as e:
+        # Handle other unexpected errors gracefully
         return jsonify({"response": f"An error occurred: {str(e)}"}), 500
 
 if __name__ == '__main__':
