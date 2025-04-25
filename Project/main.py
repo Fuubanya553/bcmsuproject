@@ -16,7 +16,7 @@ def home():
     return render_template("temp.html")  # Corrected path
 
 # Load CSV files
-folder_path = 'Project\\OllamaModel'
+folder_path = 'OllamaModel'
 all_tables = []
 
 for filename in os.listdir(folder_path):
