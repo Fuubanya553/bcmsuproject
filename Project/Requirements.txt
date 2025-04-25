@@ -1,4 +1,13 @@
-flask
-scikit-learn
-pandas
+Flask>=3.1.0
 gunicorn
+flask-cors
+
+transformers>=4.51.2
+torch>=2.5.0
+sentence-transformers
+ollama
+openpyxl
+pandas
+numpy
+scikit-learn
+requests
