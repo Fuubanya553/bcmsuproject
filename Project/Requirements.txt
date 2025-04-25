@@ -3,7 +3,7 @@ gunicorn
 flask-cors
 
 transformers>=4.51.2
-torch>=2.5.0
+torch==2.6.0
 sentence-transformers
 ollama
 openpyxl
