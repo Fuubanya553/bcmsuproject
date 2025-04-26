@@ -83,6 +83,7 @@ def ask():
         if not question:
             return jsonify({"response": "No question provided."}), 400
 
+        # Filter menu items based on the question
         filtered_items = filter_df_by_keywords(df, question)
         context_table = build_markdown_table(filtered_items) if not filtered_items.empty else "No matching items found."
 
@@ -110,7 +111,5 @@ Now answer this question:
         return jsonify({"response": f"An error occurred: {str(e)}"}), 500
 
 if __name__ == '__main__':
-
     port = os.getenv('PORT', 5000)
-    
     app.run(host='0.0.0.0', port=port, debug=True)
