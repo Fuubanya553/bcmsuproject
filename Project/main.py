@@ -1,20 +1,16 @@
-import pandas as pd
+import pandas as pd 
 import ollama
-import requests
 import os
 import re
 from flask import Flask, render_template, request, jsonify, url_for
 from flask_cors import CORS
-
-# Set the external IP of your VM
-OLLAMA_API_URL = os.getenv('OLLAMA_API_URL', 'http://34.148.71.211:11434')
 
 app = Flask(__name__, template_folder='template', static_folder='static')
 CORS(app)
 
 @app.route("/")
 def home():
-    return render_template("temp.html")
+    return render_template("temp.html")  # Corrected path
 
 # Load CSV files
 folder_path = 'OllamaModel'
@@ -87,6 +83,7 @@ def ask():
         if not question:
             return jsonify({"response": "No question provided."}), 400
 
+        # Filter menu items based on the question
         filtered_items = filter_df_by_keywords(df, question)
         context_table = build_markdown_table(filtered_items) if not filtered_items.empty else "No matching items found."
 
@@ -98,27 +95,21 @@ Now answer this question:
 {question}
 """
 
-        payload = {
-            "model": "llama3.2",
-            "messages": [{"role": "user", "content": full_prompt}]
-        }
-
         try:
-            api_response = requests.post(f"{OLLAMA_API_URL}/api/chat", json=payload, timeout=30)
-            api_response.raise_for_status()
-            response_json = api_response.json()
-
-            if not response_json or 'message' not in response_json or 'content' not in response_json['message']:
+            # Attempting to connect to Ollama and get a response
+            response = ollama.chat(model='llama3.2', messages=[{'role': 'user', 'content': full_prompt}])
+            if not response or 'message' not in response or 'content' not in response['message']:
                 return jsonify({"response": "Model returned an unexpected response."}), 500
-
-            return jsonify({"response": response_json['message']['content']})
-
         except Exception as e:
-            return jsonify({"response": f"Failed to connect to Ollama API: {str(e)}"}), 500
+            # If Ollama connection fails, log the error and return a response
+            return jsonify({"response": f"Failed to connect to Ollama: {str(e)}"}), 500
+
+        return jsonify({"response": response['message']['content']})
 
     except Exception as e:
+        # Handle other unexpected errors gracefully
         return jsonify({"response": f"An error occurred: {str(e)}"}), 500
 
 if __name__ == '__main__':
-    port = int(os.getenv('PORT', 5000))
+    port = os.getenv('PORT', 5000)
     app.run(host='0.0.0.0', port=port, debug=True)
