@@ -1,16 +1,20 @@
 import pandas as pd
 import ollama
+import requests
 import os
 import re
-from flask import Flask, render_template, request, jsonify, url_for, requests
+from flask import Flask, render_template, request, jsonify, url_for
 from flask_cors import CORS
+
+# Set the external IP of your VM
+OLLAMA_API_URL = os.getenv('OLLAMA_API_URL', 'http://34.148.71.211:11434')
 
 app = Flask(__name__, template_folder='template', static_folder='static')
 CORS(app)
 
 @app.route("/")
 def home():
-    return render_template("temp.html")  # Corrected path
+    return render_template("temp.html")
 
 # Load CSV files
 folder_path = 'OllamaModel'
@@ -75,8 +79,6 @@ When responding:
 NEVER make up items, prices, or descriptions.
 """
 
-OLLAMA_API_URL = os.getenv("OLLAMA_API_URL", "http://localhost:11434")
-
 @app.route("/ask", methods=['POST'])
 def ask():
     try:
@@ -116,3 +118,7 @@ Now answer this question:
 
     except Exception as e:
         return jsonify({"response": f"An error occurred: {str(e)}"}), 500
+
+if __name__ == '__main__':
+    port = int(os.getenv('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
