@@ -4,6 +4,10 @@ import os
 import re
 from flask import Flask, render_template, request, jsonify, url_for
 from flask_cors import CORS
+import requests
+import json
+
+ollama.base_url = 'http://34.48.180.5:11434'
 
 app = Flask(__name__, template_folder='template', static_folder='static')
 CORS(app)
@@ -96,18 +100,25 @@ Now answer this question:
 """
 
         try:
-            # Attempting to connect to Ollama and get a response
-            response = ollama.chat(model='llama3.2', messages=[{'role': 'user', 'content': full_prompt}])
-            if not response or 'message' not in response or 'content' not in response['message']:
-                return jsonify({"response": "Model returned an unexpected response."}), 500
+            # Use requests to make an HTTP request to your Google Cloud Ollama instance
+            ollama_api_url = "http://34.48.180.5:11434/api/generate"  # External IP of your Google Cloud VM
+            response = requests.post(ollama_api_url, json={"model": "llama3.2", "prompt": full_prompt})
+
+            # Handle the response from Ollama
+            if response.status_code == 200:
+                response_data = response.json()
+                # We should concatenate all parts of the response from Ollama
+                response_text = ""
+                for chunk in response_data.get("message", {}).get("content", []):
+                    response_text += chunk.get("response", "")
+                
+                return jsonify({"response": response_text.strip()})
+            else:
+                return jsonify({"response": f"Error from Ollama: {response.status_code}"}), 500
         except Exception as e:
-            # If Ollama connection fails, log the error and return a response
             return jsonify({"response": f"Failed to connect to Ollama: {str(e)}"}), 500
 
-        return jsonify({"response": response['message']['content']})
-
     except Exception as e:
-        # Handle other unexpected errors gracefully
         return jsonify({"response": f"An error occurred: {str(e)}"}), 500
 
 if __name__ == '__main__':
